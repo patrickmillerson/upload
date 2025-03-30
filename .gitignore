@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+db.sqlite3
+/static/
+/media/
+
+# Environment variables
+.env
+
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# Backblaze B2 credentials (if stored locally)
+b2_account.json
+
+# Other files you might want to ignore
+.DS_Store

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Success</title>
+</head>
+<body>
+    <h1>{{ message }}</h1>
+    <p>Here is your uploaded image:</p>
+    <img src="{{ file_url }}" alt="Uploaded Image" style="max-width: 20%; height: auto;">
+    
+    <!-- Button to go to the list of uploaded images (or another page) -->
+    <a href="{% url 'image_list' %}">
+        <button>Go to Image List</button>
+    </a>
+</body>
+</html>

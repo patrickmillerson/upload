@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Image List</h1>
+    <a href="{% url 'upload_image' %}">Upload Image</a>
+    {% for image in images %}
+    <div>
+        <img src="{{ image.file_url }}" alt="{{ image.file_name }}" width="200">
+        <p>{{ image.file_name }}</p>
+        <form action="{% url 'delete_image' image.id %}" method="POST">
+            {% csrf_token %}
+            <button type="submit">Delete</button>
+        </form>
+    </div>
+{% endfor %}    
+    
+</body>
+</html>
