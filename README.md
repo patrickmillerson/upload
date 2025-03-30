@@ -1,0 +1,9 @@
+# upload
+
+# These are the ENV VARS:
+#
+SECRET_KEY=''
+B2_BUCKET_NAME=''
+B2_ACCOUNT_ID=''
+B2_APPLICATION_KEY=''
+DJANGO_ENV='
